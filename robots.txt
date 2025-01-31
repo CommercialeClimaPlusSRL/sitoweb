@@ -1,0 +1,20 @@
+# robots.txt for Commerciale ClimaPlus s.r.l.
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Prevent indexing of sensitive directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /includes/
+
+# Recommended crawler delay
+Crawl-delay: 10
+
+# Add sitemap when available
+# Sitemap: https://www.commercialeclimaplus.it/sitemap.xml

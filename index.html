@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commerciale Clima Plus SRL</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Commerciale ClimaPlus" />
+    <link rel="manifest" href="site.webmanifest" />
+    
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    
+
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo ClimaPlus">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#info">Informazioni</a></li>
+                <li><a href="#prodotti">Prodotti</a></li>
+				<li><a href="#contatti">Contatti</a></li>
+                <li><a href="#mappa">Mappa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="logo.png" alt="Logo ClimaPlus">
+            </div>
+            <h1>Commerciale Clima Plus</h1>
+            <p>Vendita di soluzioni HVAC per professionisti del settore</p>
+            <a href="#info" class="btn-main">Scopri di più</a>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="section info">
+        <div class="content-container">
+            <h2>Chi siamo</h2>
+            <p>Commerciale Clima Plus è un'azienda specializzata nella vendita di prodotti HVAC per professionisti. Offriamo soluzioni innovative ed efficienti per garantire il massimo del comfort e dell'efficienza energetica in ogni ambiente. La nostra missione è fornire ai nostri clienti solo il meglio della tecnologia HVAC, con un focus sulla qualità e l'affidabilità dei nostri prodotti.</p>
+        </div>
+    </section>
+
+    <!-- Prodotti Section -->
+    <section id="prodotti" class="section prodotti">
+        <div class="content-container">
+            <h2>I Nostri Prodotti</h2>
+            <div class="product-box">
+                <div class="product-item">
+                    <h3>Caldaie</h3>
+                    <p>Soluzioni per il riscaldamento domestico e industriale, efficienti e sicure.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Pompe di Calore</h3>
+                    <p>Tecnologia avanzata per il riscaldamento e raffreddamento, con bassi consumi energetici.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Pompe di Calore Ibride</h3>
+                    <p>Innovative soluzioni che combinano efficienza termica con la possibilità di risparmio energetico.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Condizionatori</h3>
+                    <p>Unità per il raffrescamento estivo in ambienti residenziali e commerciali.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Ventilconvettori</h3>
+                    <p>Soluzioni per la ventilazione e il riscaldamento - raffreddamento degli ambienti.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Radiatori</h3>
+                    <p>Dispositivi per il riscaldamento di ambienti residenziali e industriali.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Ventilazione Meccanica</h3>
+                    <p>Sistemi di ventilazione per il miglioramento della qualità dell'aria negli ambienti.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Impianti a Pavimento</h3>
+                    <p>Riscaldamento a pavimento che offre comfort e risparmio energetico.</p>
+                </div>
+                <div class="product-item">
+                    <h3>VRF</h3>
+                    <p>Sistemi di climatizzazione avanzati per applicazioni commerciali e industriali.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Canne Fumarie</h3>
+                    <p>Soluzioni per l'evacuazione dei fumi e il miglioramento della sicurezza.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Deumidificazione</h3>
+                    <p>Prodotti per mantenere l'umidità sotto controllo e migliorare la qualità dell'aria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="section contatti">
+        <div class="content-container">
+            <h2>Contattaci</h2>
+            <div class="contact-details">
+                <p><strong>P.IVA:</strong> 01234567891</p>
+				<p><strong>SDI:</strong> M5UXCR1</p>
+				<p><strong>Sede:</strong> Viale Bologna 24, 47122 Forlì</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+3933357203857">+39 33357203857</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+393496808840">+39 3496808840</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@commercialeclimaplus.it">info@commercialeclimaplus.it</a>
+                </div>
+        </div>
+    </section>
+
+    <!-- Mappa Section -->
+    <section id="mappa" class="section mappa">
+        <div class="content-container">
+            <h2>Dove siamo</h2>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="company-info">
+                <h3>Commerciale ClimaPlus s.r.l.</h3>
+                <p>P.IVA: 01234567891</p>
+                <p>Sede: Viale Bologna 24, 47122 Forlì</p>
+                <p>Tel: +39 33357203857 / +39 3496808840</p>
+                <p>Email: info@commercialeclimaplus.it</p>
+            </div>
+            <p class="copyright">&copy; 2025 Commerciale ClimaPlus s.r.l. - Tutti i diritti riservati</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
